@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>鱼C出品-CSS3实现立体文字动态文字特效</title>
+        <link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+		
+			
+			<header>
+
+				<h1>鱼C工作室 <strong>HTML5特效宝典</strong> Boom</h1>
+				<h2>Write Once Sex EveryWhere</h2>
+				
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+					<a href="index3.html">Demo 3</a>
+					<a href="index4.html">Demo 4</a>
+				</nav>
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+				
+				<h2 class="cs-text">
+					<span class="cs-text-cut">鱼C</span>
+					<span class="cs-text-mid">www.fishc.com</span>
+					<span class="cs-text-cut">鱼C</span>
+				</h2>
+				
+			</section>
+			
+        </div>
+
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/jquery.lettering.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".cs-text-cut").lettering('words');
+			});
+		</script>
+    </body>
+</html>
